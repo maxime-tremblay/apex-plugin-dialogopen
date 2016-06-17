@@ -1,4 +1,4 @@
-# Oracle APEX Dynamic Action Plugin - Show Close Dialog Success Message
+# Oracle APEX Dynamic Action Plugin - Open Dialog
 This dynamic action plugin is used to open a Dialog.
 
 ## Changelog
