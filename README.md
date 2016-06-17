@@ -30,4 +30,4 @@ This dynamic action plugin is used to open a Dialog.
 - Set attributes to desired behaviour
 
 ## Preview
-![](https://github.com/maxime-tremblay/apex-plugin-dialogopen/master/preview.gif)
+![](https://github.com/maxime-tremblay/apex-plugin-dialogopen/blob/master/preview.gif)
