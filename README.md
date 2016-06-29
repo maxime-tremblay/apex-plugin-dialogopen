@@ -2,14 +2,15 @@
 This dynamic action plugin is used to open a Dialog.
 
 ## Changelog
-### 1.0 - Initial Release
-
 ### 1.1
-  - Added new attributes
+  - New attributes
     - Javascript Expression
     - Dialog Triggering Element Selector
     - Page Checksum
   - Plugin code rework
+
+### 1.0
+  - Initial Release
 
 ## Install
 - Import plugin file "dynamic_action_plugin_ca_maximet_apexdialogopen.sql" from source directory into your application
