@@ -1,6 +1,6 @@
 {
   "name" : "Open Dialog",
-  "version" : "1.0",
+  "version" : "1.1",
   "description" : "This dynamic action plugin is used to open a Dialog.",
   "keywords" : ["dialog", "open"],
   "homepage" : "https://github.com/maxime-tremblay/apex-plugin-dialogopen",
