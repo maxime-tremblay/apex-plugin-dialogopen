@@ -2,6 +2,9 @@
 This dynamic action plugin is used to open a Dialog.
 
 ## Changelog
+### 1.2
+  - Removed the eval() function
+
 ### 1.1
   - New attributes
     - Javascript Expression

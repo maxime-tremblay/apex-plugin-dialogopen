@@ -1,6 +1,6 @@
 /*-------------------------------------
  * Apex Open Dialog Functions
- * Version: 1.1 (2016-06-29)
+ * Version: 1.2 (2017-02-23)
  * Author:  Maxime Tremblay
  *-------------------------------------
  */
@@ -92,7 +92,7 @@ begin
 
     l_dialog_url := apex_util.prepare_url(p_url                => l_url,
                                           p_checksum_type      => l_url_checksum,
-                                          p_triggering_element => '$(''' || l_dialog_triggering_elem || ''')' -- undocumented parameter
+                                          p_triggering_element => 'apex.jQuery(''' || l_dialog_triggering_elem || ''')'
                                           );
 
     apex_json.open_object;

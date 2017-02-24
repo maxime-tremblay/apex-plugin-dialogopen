@@ -1,6 +1,6 @@
 // Apex Open Dialog Functions
 // Author: Maxime Tremblay
-// Version: 1.1
+// Version: 1.2
 
 // global namespace
 var apexDialogOpen = {
@@ -41,7 +41,9 @@ var apexDialogOpen = {
                 lDynamicUrl = $(daThis.triggeringElement).attr(lAttribute);
             }
             else if (lBasedOn == 'JAVASCRIPT'){
-                lDynamicUrl = eval(lJavascriptExpression);
+                //lDynamicUrl = eval(lJavascriptExpression);
+                var fGetJsExpression = new Function('return ' + lJavascriptExpression);
+                lDynamicUrl = fGetJsExpression();
             }
             else{
                 lDynamicUrl = $(lSelector).attr(lAttribute);
@@ -60,7 +62,9 @@ var apexDialogOpen = {
                            { // SUCCESS function
                              success: function(pData) {
                                 if (pData.success){
-                                    eval(pData.message);
+                                    //eval(pData.message);
+                                    var fOpenDialog = new Function(pData.message)
+                                    fOpenDialog();
                                 }
                              },
                              // ERROR function
