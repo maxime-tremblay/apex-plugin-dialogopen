@@ -1,6 +1,8 @@
 # Oracle APEX Dynamic Action Plugin - Open Dialog
 This dynamic action plugin is used to open a Dialog.
 
+> :warning: Exposing the APEX_UTIL.PREPARE_URL API to the front-end can result in a security vulnerability. This is due to the fact that a user (or penetration tools) could then generate valid checksums for any page/item they want. To use the plugin you should be extra careful and use  additionnal security check on your pages so that you make sure that the user really has access to the page/record.
+
 ## Changelog
 ### 1.2
   - Removed the eval() function
